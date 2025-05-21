@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag "https://unpkg.com/@fullcalendar/core@6.1.11/main.min.css" %>
+    <%= javascript_include_tag "https://unpkg.com/@fullcalendar/core@6.1.11/main.min.js" %>
+    <%= javascript_include_tag "https://unpkg.com/@fullcalendar/daygrid@6.1.11/main.min.js" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
     <%= yield %>
   </body>
